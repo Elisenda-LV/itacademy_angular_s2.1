@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" class="stylesheet">
+    <title>Javascript S2.1</title>
+</head>
+<body>
+    <div>
+        <h1>1.1 ARROW FUNCTIONS</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1: Suma dos números</h4>
+        <p>Introdueix un número A: <input type="number" id="n1"></p>
+        <p>Introdueix un número B: <input type="number" id="n2"></p>
+        <p><button id="btn_menu" onclick="add()">Sumar</button></p>
+        <h4 id="suma"></h4>
+        <br>
+        <h4>Exercici 2: Random del 0 al 100</h4>
+        <p><button id="btn_menu" onclick="randomNumber()">Random</button></p>
+        <h4 id="numero"></h4>
+        <br>
+        <h4>Exercici 3: Hola!</h4>
+        <p>Com et dius?: <input type="text" id="name1"></p>
+        <p><button id="btn_menu" onclick="greet()">Saludar</button></p>
+        <h4 id="saludo"></h4>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 4: Print Numbers per consola</h4>
+        <br>
+    </div>
+
+    <div>
+        <h1>1.2 OPERADOR TERNARI</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1: Pots conduir?</h4>
+        <p>Introdueix la teva edat: <input type="number" id="edat"></p>
+        <p><button id="btn_menu" onclick="conduir()">Consulta</button></p>
+        <h4 id="resposta"></h4>
+        <br>
+        <h4>Exercici 2: Quin número és més gran?</h4>
+        <p>Introdueix un número A: <input type="number" id="num1"></p>
+        <p>Introdueix un número B: <input type="number" id="num2"></p>
+        <p><button id="btn_menu" onclick="comparar()">Comparar</button></p>
+        <h4 id="compara"></h4>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 3: Enllaçar operadors ternaris i amb funcions</h4>
+        <p>Introdueix un número per determinar si es positiu, negatiu o zero: <input type="number" id="tipus"></p>
+        <p><button id="btn_menu" onclick="enlazar()">Consulta</button></p>
+        <h4 id="tipusR"></h4>
+        <br>
+       
+        <p>Introdueix un número A per trobar valor màxim: <input type="number" id="numA"></p>
+        <p>Introdueix un número B per trobar valor màxim: <input type="number" id="numB"></p>
+        <p>Introdueix un número C per trobar valor màxim: <input type="number" id="numC"></p>
+        <p><button id="btn_menu" onclick="trobarMaxim()">Valor Màxim</button></p>
+        <h4 id="maxim"></h4>
+        <br>
+        <h3>Nivell 3</h3>
+        <h4>Exercici 4: Operador ternari dins d'un bucle</h4>
+        <p><button id="btn_menu" onclick="parOImpar()">Par o Impar</button></p>
+        <h4 id="array"></h4>
+        <br>
+
+    </div>
+
+    <div>
+        <h1>1.3 CALLBACKS</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1: Callback bàsic, processar un número random.</h4>
+        <h4 id="processo"></h4>
+        <br>
+        <h4>Exercici 2: Callbacks amb operacions matemàtiques </h4>
+        <p>Introdueix un número A: <input type="number" id="nA"></p>
+        <p>Introdueix un número B: <input type="number" id="nB"></p>
+        <p><button id="btn_menu" onclick="sumar()">Calcular</button></p>
+        <h4 id="calcul"></h4>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 3: Callback amb funcions asíncrones</h4>
+        <p>Com et dius?: <input type="text" id="nom"></p>
+        <p><button id="btn_menu" onclick="saludar()">Saludar</button></p>
+        <h4 id="saludar"></h4>
+        <br>
+        <h4>Exercici 4: Callbacks amb arrays</h4>
+        <p><button id="btn_menu" onclick="procesar()">Processar</button></p>
+        <h4 id="elements"></h4>
+        <br>
+        <h3>Nivell 3</h3>
+        <h4>Exercici 5:Convertir a majúscules</h4>
+        <p>Escriu una frase: <input type="text" id="paraula"></p>
+        <p><button id="btn_menu" onclick="convertir()">Convertir</button></p>
+        <h4 id="majuscula"></h4>
+    </div>
+
+    <div>
+        <h1>1.4 REST & SPREAD OPERATORS</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1: Crear un 3r array que contingui dades a1 i a2.</h4>
+        <p id="arr"></p>
+        <br>
+        <h4>Exercici 2: Rest en funció suma</h4>
+        <p id="totale"></p>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 3: Copiar objectes amb Spread i mostrar per consola.</h4>
+        <br>
+        <h4>Exercici 4: Rest en Destructuring per consola</h4>
+        <br>
+        <h3>Nivell 3 </h3>
+        <h4>Exercici 5: Spread en funcions</h4>
+        <p id="m"></p>
+        <h4>Exercici 6: Fusionar objectes amb Spread per consola</h4>
+        <br>
+    </div>
+
+    <div>
+        <h1>1.5 ARRAY TRANSFORMATIONS</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1: Map per crear el quadrat de cada número.</h4>
+        <p id="q"></p>
+        <br>
+        <h4>Exercici 2: Crear array que només contingui els parells</h4>
+        <p id="p"></p>
+        <br>
+        <h4>Exercici 3: Find per trobar el major de 10 dins d'un array</h4>
+        <p id="f"></p>
+        <br>
+        <h4>Exercici 4: Reduce per calcular suma total</h4>
+        <p id="r"></p>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 5: En una sola funció</h4>
+        <p id="mix"></p>
+        <br>
+        <h3>Nivell 3</h3>
+        <h4>Exercici 6: Every/Some </h4>
+        <p id="every"></p>
+        <p id="some"></p>
+        <br>
+    </div>
+
+    <div>
+        <h1>1.6 ARRAY LOOPS</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1: For Each per consola</h4>
+        <br>
+        <h4>Exercici 2: For ... of per imprimir noms per consola</h4>
+        <br>
+        <h4>Exercici 3: Filter per crear nou array de números parells</h4>
+        <p id="nou"></p>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 4: imprimir array per consola amb bucle for-in</h4>
+        <br>
+        <h4>Exercici 5: For of amb Break per imprimir per consola</h4>
+        <br>
+        <h3>Nivell 3</h3>
+        <h4>Exercici 6: for-of amb index per imprimir a consola</h4>
+        <br>
+    </div>
+
+    <div>
+        <h1>1.7 PROMISES & ASYNC/AWAIT</h1>
+        <hr>
+        <h3>Nivell 1</h3>
+        <h4>Exercici 1 i 2: Crea una promesa que saludi i imprimeixi amb un .then a la consola</h4>
+        <br>
+        <h4>Exercici 3: Seguint l'anterior promesa amb reject </h4>
+        <br>
+        <h4>Exercici 4: Reescriure l'exercici 1 amb async/await</h4>
+        <br>
+        <h3>Nivell 2</h3>
+        <h4>Exercici 5: Gestió d'errors amb async/await modificant l'exercici anterior utilizant un bloc try/catch</h4>
+        <br>
+        <h3>Nivell 3</h3>
+        <h4>Exercici 6: Promise.all crea dues promeses que es resolguin després de 2 i 3 segons i imprimeix resultat a la consola.</h4>
+        <br>
+    </div>
+
+
+
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
